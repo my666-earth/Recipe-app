@@ -118,8 +118,8 @@ button[type="submit"]:hover,
   background-color: #694c2f;
   border-radius: 12px;
   width: 40%;
-height: 60%;
-font-size: 20px;
+  height: 60%;
+  font-size: 20px;
 }
 /*responsive code */
 

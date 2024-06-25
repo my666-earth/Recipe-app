@@ -5,9 +5,6 @@ const recipeDetailsContent = document.querySelector('.recipe-details-content');
 const recipeCloseBtn = document.querySelector('.recipe-close-btn');
 
 
-
-
-
 // getting recipes with js function 
 
 
