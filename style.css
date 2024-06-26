@@ -120,6 +120,9 @@ button[type="submit"]:hover,
   width: 40%;
   height: 60%;
   font-size: 20px;
+  transition: all 0.5 ease-in-out;
+  overflow-y: scroll;
+  
 }
 /*responsive code */
 
