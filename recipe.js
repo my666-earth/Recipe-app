@@ -21,7 +21,7 @@ const fetchRecipes = async (query) => {
         recipeDiv.classList.add('recipe');
         recipeDiv.innerHTML = `<img src="${meal.strMealThumb}">
         <h3>${meal.strMeal}</h3>
-        <p><span>${meal.strArea}</span></p>
+        <p><span>${meal.strArea}</span>Dish</p>
         <p>Belongs to <span>${meal.strCategory}</sapn>Categor</p>
         `
 
@@ -60,19 +60,14 @@ const fetchIngredients = (meal) => {
 
 const openRecipePopup = (meal) => {
     recipeDetailsContent.innerHTML = `
-    <h2 class='recipeName'>${meal.strMeal}</h2>
+    <h2>${meal.strMeal}</h2>
     <h3>Ingredient:</h3>
-    // <ul class='ingredientList'>${fetchIngredients(meal)}</ul>
-    // <div>
-    // <h3>Instructions:</h3>
-    // <ul class="ingredientList">${fetchIngredients(meal)}</ul>
-    // <h3>Instructions:</h3>
-    // <p class="recipeInstructions">${meal.strInstructions(meal)}</p>
-    // </div>
+    <ul>${fetchIngredients(meal)}</ul>
+    
     `
     recipeDetailsContent.parentElement.style.display = "block";
 }
-
+ 
 
 
 recipeCloseBtn.addEventListener('click', () => {
